@@ -67,6 +67,42 @@ build CMakeFiles/data_structures.dir/Lists/DoubleLinkedList.cpp.obj: CXX_COMPILE
   OBJECT_DIR = CMakeFiles\data_structures.dir
   OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\Lists
 
+build CMakeFiles/data_structures.dir/Lists/Queue.cpp.obj: CXX_COMPILER__data_structures_unscanned_Debug C$:/Users/Endi/CLionProjects/data_structures/Lists/Queue.cpp || cmake_object_order_depends_target_data_structures
+  DEP_FILE = CMakeFiles\data_structures.dir\Lists\Queue.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\Lists
+
+build CMakeFiles/data_structures.dir/Lists/InputRestrictedQueue.cpp.obj: CXX_COMPILER__data_structures_unscanned_Debug C$:/Users/Endi/CLionProjects/data_structures/Lists/InputRestrictedQueue.cpp || cmake_object_order_depends_target_data_structures
+  DEP_FILE = CMakeFiles\data_structures.dir\Lists\InputRestrictedQueue.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\Lists
+
+build CMakeFiles/data_structures.dir/Lists/Stack.cpp.obj: CXX_COMPILER__data_structures_unscanned_Debug C$:/Users/Endi/CLionProjects/data_structures/Lists/Stack.cpp || cmake_object_order_depends_target_data_structures
+  DEP_FILE = CMakeFiles\data_structures.dir\Lists\Stack.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\Lists
+
+build CMakeFiles/data_structures.dir/Lists/QueueOnMassifs.cpp.obj: CXX_COMPILER__data_structures_unscanned_Debug C$:/Users/Endi/CLionProjects/data_structures/Lists/QueueOnMassifs.cpp || cmake_object_order_depends_target_data_structures
+  DEP_FILE = CMakeFiles\data_structures.dir\Lists\QueueOnMassifs.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\Lists
+
+build CMakeFiles/data_structures.dir/Lists/InputRestrictedQueueOnMassifs.cpp.obj: CXX_COMPILER__data_structures_unscanned_Debug C$:/Users/Endi/CLionProjects/data_structures/Lists/InputRestrictedQueueOnMassifs.cpp || cmake_object_order_depends_target_data_structures
+  DEP_FILE = CMakeFiles\data_structures.dir\Lists\InputRestrictedQueueOnMassifs.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\Lists
+
+build CMakeFiles/data_structures.dir/Lists/StackOnMassifs.cpp.obj: CXX_COMPILER__data_structures_unscanned_Debug C$:/Users/Endi/CLionProjects/data_structures/Lists/StackOnMassifs.cpp || cmake_object_order_depends_target_data_structures
+  DEP_FILE = CMakeFiles\data_structures.dir\Lists\StackOnMassifs.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\Lists
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target data_structures
@@ -75,7 +111,7 @@ build CMakeFiles/data_structures.dir/Lists/DoubleLinkedList.cpp.obj: CXX_COMPILE
 #############################################
 # Link the executable data_structures.exe
 
-build data_structures.exe: CXX_EXECUTABLE_LINKER__data_structures_Debug CMakeFiles/data_structures.dir/main.cpp.obj CMakeFiles/data_structures.dir/Lists/SinglyLinkedList.cpp.obj CMakeFiles/data_structures.dir/Lists/DoubleLinkedList.cpp.obj
+build data_structures.exe: CXX_EXECUTABLE_LINKER__data_structures_Debug CMakeFiles/data_structures.dir/main.cpp.obj CMakeFiles/data_structures.dir/Lists/SinglyLinkedList.cpp.obj CMakeFiles/data_structures.dir/Lists/DoubleLinkedList.cpp.obj CMakeFiles/data_structures.dir/Lists/Queue.cpp.obj CMakeFiles/data_structures.dir/Lists/InputRestrictedQueue.cpp.obj CMakeFiles/data_structures.dir/Lists/Stack.cpp.obj CMakeFiles/data_structures.dir/Lists/QueueOnMassifs.cpp.obj CMakeFiles/data_structures.dir/Lists/InputRestrictedQueueOnMassifs.cpp.obj CMakeFiles/data_structures.dir/Lists/StackOnMassifs.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\data_structures.dir

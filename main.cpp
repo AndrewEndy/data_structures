@@ -1,6 +1,12 @@
 #include <iostream>
 #include "Lists/SinglyLinkedList.h"
 #include "Lists/DoubleLinkedList.h"
+#include "Lists/Queue.h"
+#include "Lists/InputRestrictedQueue.h"
+#include "Lists/Stack.h"
+#include "Lists/QueueOnMassifs.h"
+#include "Lists/InputRestrictedQueueOnMassifs.h"
+#include "Lists/StackOnMassifs.h"
 
 void exampleSingleList(){
     try{
@@ -113,11 +119,247 @@ void exampleDoubleList(){
         cerr<<e.what()<<endl;
     }
 }
+void exampleQueue(){
+    try{
+        Queue<int> a;
+        cout<<"is empty: "<<a.IsEmpty()<<endl;
+
+        cout<<"Enqueue:"<<endl;
+        a.Enqueue(4);
+        a.Enqueue(7);
+        a.Enqueue(12);
+        cout<<a<<endl;
+
+        cout<<"Dequeue: "<<a.Dequeue()<< endl<<a<<endl;
+
+        cout<<"Peek: "<<a.Peek()<<endl<<a<<endl;
+
+        cout<<"Size: "<<a.getSize()<<endl;
+
+        cout<<"is empty: "<<a.IsEmpty()<<endl;
+
+        cout<<"Dequeue: "<<a.Dequeue()<< endl<<a<<endl;
+        cout<<"Dequeue: "<<a.Dequeue()<< endl<<a<<endl;
+        a.Dequeue();
+    }
+    catch (const runtime_error &e){
+        cerr<<e.what()<<endl;
+    }
+}
+void exampleInputRestrictedQueue(){
+    try{
+        InputRestrictedQueue<int> a;
+        cout<<"Enqueue: "<<endl;
+        a.Enqueue(12);
+        a.Enqueue(5);
+        a.Enqueue(8);
+        a.Enqueue(15);
+        a.Enqueue(3);
+
+        cout<<a<<endl;
+
+        cout<<"Dequeue: "<<a.Dequeue()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+
+        cout<<"Peek: "<<a.Peek()<<" --- "<<a<<endl;
+        cout<<"Peek from end: "<<a.PeekFromEnd()<<" --- "<<a<<endl;
+
+        cout<<"is empty: "<<a.IsEmpty()<<endl;
+
+        cout<<"size: "<<a.getSize()<<endl;
+
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+    }
+    catch (const runtime_error &e){
+        cerr<<e.what()<<endl;
+    }
+}
+void exampleStack(){
+    try{
+        Stack<int> a;
+        cout<<"Push: "<<endl;
+        a.Push(12);
+        cout<<a<<endl;
+        a.Push(7);
+        cout<<a<<endl;
+        a.Push(9);
+        cout<<a<<endl;
+        a.Push(15);
+        cout<<a<<endl;
+        a.Push(4);
+        cout<<a<<endl;
+
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Peek: "<<a.Peek()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Peek: "<<a.Peek()<<" --- "<<a<<endl;
+
+        cout<<"is empty: "<<a.IsEmpty()<<endl;
+        cout<<"size: "<<a.getSize()<<endl;
+
+        cout<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+
+    }
+    catch (const runtime_error &e){
+        cerr<<e.what()<<endl;
+    }
+}
+void exampleQueueOnMassifs(){
+    try{
+        QueueOnMassifs<int> a;
+        cout<<"is empty: "<<a.isEmpty()<<endl;
+
+        cout<<"is full: "<<a.isFull()<<endl;
+
+        cout<<"Enqueue:"<<endl;
+        a.Enqueue(4);
+        a.Enqueue(7);
+        a.Enqueue(12);
+        cout<<a<<endl;
+
+        cout<<"Dequeue: "<<a.Dequeue()<< endl<<a<<endl;
+
+        cout<<"Peek: "<<a.Peek()<<endl<<a<<endl;
+
+        cout<<"Size: "<<a.getSize()<<endl;
+
+        cout<<"is empty: "<<a.isEmpty()<<endl;
+
+        cout<<"Dequeue: "<<a.Dequeue()<< endl<<a<<endl;
+        cout<<"Dequeue: "<<a.Dequeue()<< endl<<a<<endl;
+        a.Dequeue();
+
+//        cout<<"Enqueue: "<<endl;
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        cout<<a;
+//
+//        cout<<"is full: "<<a.isFull()<<endl;
+
+    }
+    catch (const runtime_error &e){
+        cerr<<e.what()<<endl;
+    }
+}
+void exampleInputRestrictedQueueOnMassifs(){
+    try{
+        InputRestrictedQueueOnMassifs<int> a;
+        cout<<"Enqueue: "<<endl;
+        a.Enqueue(12);
+        a.Enqueue(5);
+        a.Enqueue(8);
+        a.Enqueue(15);
+        a.Enqueue(3);
+
+        cout<<a<<endl;
+
+        cout<<"Dequeue: "<<a.Dequeue()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+
+        cout<<"Peek: "<<a.Peek()<<" --- "<<a<<endl;
+        cout<<"Peek from end: "<<a.PeekFromEnd()<<" --- "<<a<<endl;
+
+        cout<<"is empty: "<<a.isEmpty()<<endl;
+
+        cout<<"size: "<<a.getSize()<<endl;
+
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+        cout<<"DeleteFromEnd: "<<a.DeleteFromEnd()<<" --- "<<a<<endl;
+
+//        cout<<"Enqueue: "<<endl;
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        a.Enqueue(12);
+//        cout<<a;
+//
+//        cout<<"is full: "<<a.isFull()<<endl;
+    }
+    catch (const runtime_error &e){
+        cerr<<e.what()<<endl;
+    }
+}
+void exampleStackOnMassifs(){
+    try{
+        StackOnMassifs<int> a;
+        cout<<"Push: "<<endl;
+        a.Push(12);
+        cout<<a<<endl;
+        a.Push(7);
+        cout<<a<<endl;
+        a.Push(9);
+        cout<<a<<endl;
+        a.Push(15);
+        cout<<a<<endl;
+        a.Push(4);
+        cout<<a<<endl;
+
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Peek: "<<a.Peek()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Peek: "<<a.Peek()<<" --- "<<a<<endl;
+
+        cout<<"is empty: "<<a.isEmpty()<<endl;
+        cout<<"size: "<<a.getSize()<<endl;
+
+        cout<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+        cout<<"Pop: "<<a.Pop()<<" --- "<<a<<endl;
+
+//        cout<<"Enqueue: "<<endl;
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        a.Push(12);
+//        cout<<a;
+//
+//        cout<<"is full: "<<a.isFull()<<endl;
+
+    }
+    catch (const runtime_error &e){
+        cerr<<e.what()<<endl;
+    }
+}
 
 
 int main() {
     //exampleSingleList();
     //exampleDoubleList();
-
-
+    //exampleQueue();
+    //exampleInputRestrictedQueue();
+    //exampleStack();
+    //exampleQueueOnMassifs();
+    //exampleInputRestrictedQueueOnMassifs();
+    //exampleStackOnMassifs();
 }

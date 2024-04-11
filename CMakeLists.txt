@@ -9,4 +9,18 @@ add_executable(data_structures main.cpp
         Lists/SinglyLinkedList.h
         node/DoubleNode.h
         Lists/DoubleLinkedList.cpp
-        Lists/DoubleLinkedList.h)
+        Lists/DoubleLinkedList.h
+        node/QueueNoda.h
+        Lists/Queue.cpp
+        Lists/Queue.h
+        Lists/InputRestrictedQueue.cpp
+        Lists/InputRestrictedQueue.h
+        node/StackNode.h
+        Lists/Stack.cpp
+        Lists/Stack.h
+        Lists/QueueOnMassifs.cpp
+        Lists/QueueOnMassifs.h
+        Lists/InputRestrictedQueueOnMassifs.cpp
+        Lists/InputRestrictedQueueOnMassifs.h
+        Lists/StackOnMassifs.cpp
+        Lists/StackOnMassifs.h)
